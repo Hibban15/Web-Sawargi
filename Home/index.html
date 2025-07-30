@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WEB SAWARGI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- navbar -->
+   <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../foto3/9.png" alt="">
+        </div>
+        <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+        <div class="menu" id="menu">
+          <a href="../Home/index.html">HOME</a>
+          <div class="dropdown" onclick="toggleDropdown(this)">
+            <a href="../Category/category.html">CATEGORY ▼</a>
+            <div class="dropdown-content">
+              <a href="../vollyball/volly.html">VOLLEYBALL</a>
+              <a href="../casual/casual.html">CASUAL</a>
+              <a href="../jaket/jaket.html">JACKET</a>
+              <a href="../polo/polo.html">POLO</a>
+              <a href="../celana/celana.html">CELANA</a>
+              <a href="../muslim/muslim.html">MUSLIM</a>
+            </div>
+          </div>
+          <a href="../About/about.html">ABOUT THE BRAND</a>
+          <a href="../Contact/contact.html">CONTACT US</a>
+        </div>
+      </div>
+    </nav>
+    <div class="spacer"></div> <!-- Spacer agar isi tidak tertutup navbar -->
+
+    <!-- slider -->
+
+    <div class="slider-container">
+      <div class="slide"><img src="../Foto/WhatsApp Image 2025-07-03 at 15.38.05_20e3a12c.jpg" alt="Slide 1"></div>
+      <div class="slide"><img src="../Foto/WhatsApp Image 2025-07-03 at 15.38.05_ec5ed5e2.jpg" alt="Slide 2"></div>
+      <div class="slide"><img src="../Foto/WhatsApp Image 2025-07-03 at 15.38.06_babce150.jpg" alt="Slide 3"></div>
+
+      <button class="nav-btn prev" onclick="changeSlide(-1)">❮</button>
+      <button class="nav-btn next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <!-- gambar1 -->
+    <div class="gallery" style="margin-top: 7rem;">
+      <a href="../casual/casual.html"><img src="../foto3/1.jpeg" alt="Gambar 1" ></a>
+      <a href="../jaket/jaket.html"><img src="../foto3/2.jpeg" alt="Gambar 1" ></a>
+      <a href="../polo/polo.html"><img src="../foto3/3.jpeg" alt="Gambar 1" ></a>
+    </div>
+
+    <div class="gallery">
+      <a href="../celana/celana.html"><img src="../foto3/4.jpeg" alt="Gambar 1" ></a>
+      <a href="../muslim/muslim.html"><img src="../foto3/5.jpeg" alt="Gambar 1" ></a>
+      <a href="../vollyball/volly.html"><img src="../foto3/6.jpeg" alt="Gambar 1" ></a>
+    </div>
+
+    <!-- gambar2 -->
+    <div class="column">
+      <img src="../foto3/7.jpeg" alt="Gambar 1">
+      <img src="../foto3/8.jpeg" alt="Gambar 2">
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://wa.me/628112225251" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/sawargi_jersey?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/sawargi.jersey.2025" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="footer-text">
+          &copy; 2025 Your Website Name. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
